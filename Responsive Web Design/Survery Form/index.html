@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">
+      Website Survey Form
+    </h1>
+    <p id="description">Hello, we need your opinion! What would you like seen in our future website?</p>
+    <form id="survey-form" action="">
+      <label id="name-label" for="name">Full name: <input type="text" id="name" required placeholder="Enter your name"> </label>
+      <label id="email-label" for="email">Email Address: <input type="email" id="email" required placeholder="Enter your email address"></label>
+      <label id="number-label" for="number">Age: <input type="number" id="number" min="12" max="99" placeholder="Enter your age"></label>
+      <label for="dropdown"> How are you associated with TSAS?
+        <select name="dropdown" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Owner</option>
+          <option value="1">Investor</option>
+          <option value="2">Customer</option>
+          <option value="3">Friend/Family</option>
+        </select>
+      </label>
+      <legend>Would you like to recieve updates about the development of the website?</legend>
+      <label for="update-yes"><input type="radio" value="update-yes" name="update" id="update-yes">Yes</label>
+      <label for="update-no"><input type="radio" value="update-no" name="update" id="update-no">No</label>
+      <legend>Features you would like seen in our website:</legend>
+      <label for="appt-booking"><input type="checkbox" name="appt-booking" id="appt-booking" value="booking">Booking Appointments</label>
+      <label for="approx-costs"><input type="checkbox" name="approx-costs" id="approx-costs" value="costs">Cost of Services</label>
+      <label for="quotes"><input type="checkbox" name="quotes" id="quotes" id="quotes" value="quotes">Quotes and Estimates</label>
+      <label for="partnerships"><input type="checkbox" name="partnerships" id="partnerships" value="partnerships">Partnerships</label>
+      <label for="products"><input type="checkbox" name="products" id="products" value="products">Products and Merchendise</label>
+      <label for="ideas">Got other ideas? Share it with us! 
+        <textarea name="ideas" id="ideas" rows="7"></textarea>
+      </label>
+      <button id="submit">submit</button>
+    </form>
+  </body>
+</html>
